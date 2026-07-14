@@ -17,7 +17,7 @@ Source limitation / current defect:
 - The original site loads many assets over http:// URLs and uses an older copyright line.
 
 Placeholders / assumptions:
-- Logo was downloaded from the public site if available; if it fails, the page falls back to text initials.
+- Logo image could not be downloaded as an image by curl; the page uses an honest initials placeholder instead of a fake logo.
 - Hero image is a labeled placeholder; no AI images or fake project photos were used.
 - The demo form is disabled and visual-only.
 - No pricing, fake testimonials, fake reviews, fake badges, or unsupported emergency availability claims were added.
