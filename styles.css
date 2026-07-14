@@ -38,10 +38,8 @@ h3{font-size:1.15rem}
   border-bottom:1px solid var(--line);
   backdrop-filter:blur(10px);
 }
-.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:var(--green)}
-.brand-mark{width:46px;height:46px;display:grid;place-items:center;flex:0 0 auto}
-.brand-name{font-family:var(--font-head);font-weight:800;font-size:1.05rem}
-.brand-name em{font-style:normal;color:var(--muted);font-weight:600}
+.brand{display:flex;align-items:center;text-decoration:none;color:var(--green)}
+.brand-logo{width:150px;height:auto;display:block}
 nav{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap}
 nav a{color:var(--ink);font-weight:600;text-decoration:none;font-size:.98rem}
 nav a:hover{color:var(--green)}
@@ -114,47 +112,6 @@ nav a:hover{color:var(--green)}
 .hero-card-value{font-family:var(--font-head);font-weight:700;font-size:1.05rem}
 a.hero-card-row:hover .hero-card-value{color:var(--accent-soft)}
 .hero-card-foot{margin:1.1rem 0 0;font-size:.85rem;color:#a9c4b3}
-
-/* ---------- Parallax house visual ---------- */
-.house-hero{
-  position:relative;
-  min-height:360px;
-  display:grid;
-  place-items:center;
-  margin:0;
-  padding:clamp(3rem,8vw,6rem) clamp(1rem,5vw,5rem);
-  overflow:hidden;
-  color:#fff;
-}
-.house-hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(90deg,rgba(18,36,26,.9),rgba(18,36,26,.52));
-  z-index:0;
-}
-.house-visual-img{
-  position:absolute;
-  inset:-4%;
-  width:108%;
-  height:108%;
-  max-width:none;
-  object-fit:cover;
-  filter:blur(2px);
-  transform:scale(1.03);
-  z-index:0;
-}
-.house-hero-content{
-  position:relative;
-  z-index:1;
-  width:min(100%,980px);
-}
-.house-hero h2{
-  max-width:720px;
-  font-size:clamp(2rem,4vw,3.7rem);
-  color:#fff;
-  text-shadow:0 2px 18px rgba(0,0,0,.28);
-}
 
 /* ---------- Cards ---------- */
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
@@ -276,7 +233,6 @@ form button:hover{background:#b56d18}
   .grid{grid-template-columns:1fr}
   .mobile-call{display:block}
   body{padding-bottom:4.5rem}
-  .house-hero{background-attachment:scroll;min-height:300px}
 }
 @media (min-width:560px) and (max-width:850px){
   .grid{grid-template-columns:1fr 1fr}
