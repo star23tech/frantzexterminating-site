@@ -25,3 +25,16 @@ if (form) {
       '&body=' + encodeURIComponent(body);
   });
 }
+
+// Small parallax-style movement for the residential placeholder visual.
+var houseVisual = document.querySelector('.house-visual-img');
+if (houseVisual) {
+  var updateHouseVisual = function () {
+    var rect = houseVisual.parentElement.getBoundingClientRect();
+    var offset = Math.max(-32, Math.min(32, rect.top * -0.06));
+    houseVisual.style.transform = 'scale(1.08) translateY(' + offset.toFixed(1) + 'px)';
+  };
+  updateHouseVisual();
+  window.addEventListener('scroll', updateHouseVisual, { passive: true });
+  window.addEventListener('resize', updateHouseVisual);
+}

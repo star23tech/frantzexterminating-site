@@ -28,7 +28,7 @@ quality while staying strictly honest — no fabricated facts.
 - Contact form has no backend; it composes a mailto: message to
   Billy@FrantzExt.com so it works on static hosting without sending data
   anywhere else.
-- Logo is a designer's proposed mark (initials), clearly a concept, not the
-  official brand logo.
+- The hero contact card uses the logo image Jamie provided from the current site.
+- A CSS-generated out-of-focus house image is used as a non-claiming placeholder visual; no stock/AI photo is presented as Frantz's work.
 - Footer carries a discreet "concept by Star 23 — not the official website"
   disclaimer.

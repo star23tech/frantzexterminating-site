@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Out of focus house placeholder">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9e2d1"/>
+      <stop offset="0.58" stop-color="#9bab8b"/>
+      <stop offset="1" stop-color="#526543"/>
+    </linearGradient>
+    <filter id="blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <circle cx="1260" cy="210" r="110" fill="#efe2a6" opacity="0.62"/>
+  <g filter="url(#blur)" opacity="0.96">
+    <rect x="0" y="650" width="1600" height="250" fill="#3e5438"/>
+    <path d="M190 548 L520 298 L860 548 Z" fill="#ece1cf"/>
+    <rect x="280" y="536" width="500" height="245" rx="12" fill="#e6d9c5"/>
+    <path d="M166 552 L520 268 L886 552" fill="none" stroke="#2b2721" stroke-width="48"/>
+    <rect x="430" y="612" width="92" height="168" fill="#60412d"/>
+    <rect x="580" y="590" width="128" height="86" rx="8" fill="#8fa5ad"/>
+    <rect x="325" y="590" width="82" height="82" rx="8" fill="#92aab3"/>
+    <rect x="1035" y="526" width="290" height="250" rx="12" fill="#ded3bf"/>
+    <path d="M980 528 L1180 370 L1380 528" fill="none" stroke="#2b2721" stroke-width="42"/>
+    <rect x="1120" y="610" width="82" height="166" fill="#66462f"/>
+    <rect x="1230" y="592" width="82" height="76" rx="8" fill="#8fa5ad"/>
+    <g fill="#31492f" opacity="0.8">
+      <circle cx="80" cy="615" r="95"/><circle cx="1510" cy="620" r="120"/><circle cx="1420" cy="670" r="95"/>
+    </g>
+  </g>
+</svg>
