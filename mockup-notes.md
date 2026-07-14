@@ -1,23 +1,34 @@
 # Frantz Exterminating mockup notes
 
-Template used: emergency-service lane adapted with reputation-rescue/direct-local restraint. Pest control can be urgent, but no 24/7 or same-day emergency claims were verified, so the page uses fast-call structure without unsupported emergency promises.
+Single-page concept for Frantz Exterminating LLC (Roanoke, VA), built to demo
+quality while staying strictly honest — no fabricated facts.
 
-Verified public sources accessed July 14, 2026:
-- http://frantzext.com/ home page
-- http://www.frantzext.com/pest-control
-- http://www.frantzext.com/residential-services
-- http://www.frantzext.com/commercial-services
-- http://www.frantzext.com/termite-control
-- http://www.frantzext.com/real-estate-inspection
-- http://www.frantzext.com/other-services
-- http://www.frantzext.com/contact
+## Voice & content principles used
+- Business voice ("we treat…", "you reach the person doing the work"), not
+  meta-copy that describes the website itself.
+- Every claim is grounded in verified public facts: services offered, owner
+  Billy Frantz (Owner/Technician), WDI/termite inspection work, contact details,
+  and the service-area towns.
+- No invented testimonials, reviews, star ratings, awards, years-in-business,
+  license numbers, pricing, or 24/7 / same-day emergency promises.
+- No AI-generated or stock photos and no fake project images. The hero uses a
+  real contact card instead of a "photo placeholder" box.
 
-Source limitation / current defect:
-- The home page returned HTTP 415 Unsupported Media Type headers to curl while still returning HTML content.
-- The original site loads many assets over http:// URLs and uses an older copyright line.
+## Verified public sources (accessed July 14, 2026)
+- http://frantzext.com/ and its pest-control, residential-services,
+  commercial-services, termite-control, real-estate-inspection, other-services,
+  and contact pages.
 
-Placeholders / assumptions:
-- Logo image could not be downloaded as an image by curl; the page uses an honest initials placeholder instead of a fake logo.
-- Hero image is a labeled placeholder; no AI images or fake project photos were used.
-- The demo form is disabled and visual-only.
-- No pricing, fake testimonials, fake reviews, fake badges, or unsupported emergency availability claims were added.
+## Source limitation
+- The live site returns HTTP 403/415 to automated fetches, so copy was written
+  from facts already captured rather than re-scraped. Anything not verifiable
+  was left out rather than guessed.
+
+## Demo behaviors
+- Contact form has no backend; it composes a mailto: message to
+  Billy@FrantzExt.com so it works on static hosting without sending data
+  anywhere else.
+- Logo is a designer's proposed mark (initials), clearly a concept, not the
+  official brand logo.
+- Footer carries a discreet "concept by Star 23 — not the official website"
+  disclaimer.
